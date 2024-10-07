@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Our Team</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="investor-africa-favicon-white.png">
+    <link rel="stylesheet" href="ForAllPagesStyles.css"> 
+    <style>
+        @media (max-width: 768px) {
+            .advisory-board {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .advisory-member {
+                max-width: 80%; 
+                margin-bottom: 20px;
+            }
+
+            button {
+                padding: 8px 16px;
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .team-section {
+                padding: 30px 10px;
+            }
+
+            h2 {
+                font-size: 1.8em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .advisory-member {
+                max-width: 100%;
+                padding: 15px;
+            }
+
+            .advisory-carousel {
+                height: 150px; 
+            }
+
+            button {
+                padding: 6px 12px;
+                font-size: 0.9em;
+            }
+        }
+    </style> 
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo-no-background.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+    
+                <li class="dropdown">
+                    <a href="#" class="dropdownbtn">About Us</a>
+                    <div class="dropdown-content">
+                        <a href="http://127.0.0.1:5500/About-Us/whoweare.html">Who we are</a>
+                        <a href="http://127.0.0.1:5500/About-Us/Missionstatement.html">Mission Statement</a>
+                        <a href="http://127.0.0.1:5500/About-Us/VissionStatement.html">Vision Statement</a>
+                        <a href="http://127.0.0.1:5500/About-Us/MeetOurTeam.html">Meet our team</a> 
+                        <a href="http://127.0.0.1:5500/About-Us/MeetOurTeam.html">Founder/CEO</a>
+                        <a href="http://127.0.0.1:5500/ContactUs.html">GET IN TOUCH</a>
+                    </div>
+                </li> 
+    
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="team-section">
+            <h2>Advisory Board & Future Team</h2>
+            <p>We're building a diverse team of experts to guide Investor Africa's growth.</p>
+            <div class="team-members"></div>
+    
+            <h3>Advisory Board</h3>
+            <div class="advisory-board">
+                <div class="advisory-member">
+                    <div class="advisory-carousel">
+                        <div class="carousel-slide active">
+                            <img src="/About-Us/Pic  (1).jpg">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="/About-Us/Pic  (3).jpg">
+                        </div>
+                    </div>
+                    <h3>Team Members</h3>
+                    <p>Investment Experts</p>
+                </div>
+    
+                <div class="advisory-member">
+                    <div class="advisory-carousel">
+                        <div class="carousel-slide active">
+                            <img src="/About-Us/Pic  (3).jpg">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="/About-Us/Pic  (4).jpg" alt="Bob Johnson">
+                        </div>
+                    </div>
+                    <h3>Team Members</h3>
+                    <p>Entrepreneurship Specialists</p>
+                </div>
+            </div>
+            <button>Join Our Team</button>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for latest news and updates.</p>
+                <form>
+                    <input type="email" placeholder="Email Address">
+                    <button>Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <ul>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </ul>
+            </div>
+            
+            <div class="footer-copyright">
+                &copy; 2024 Investor Africa. All rights reserved.
+            </div>
+        </div>
+    </footer>  
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        const carousels = document.querySelectorAll('.advisory-carousel');
+        carousels.forEach(carousel => {
+            let currentSlide = 0;
+            const slides = carousel.querySelectorAll('img');
+            const totalSlides = slides.length;
+
+            // Auto slide every 3 seconds
+            setInterval(() => {
+                slides[currentSlide].style.display = 'none'; // Hide current slide
+                currentSlide = (currentSlide + 1) % totalSlides; // Move to next slide
+                slides[currentSlide].style.display = 'block'; // Show next slide
+            }, 3000); // 3 seconds interval
+        });
+    });
+    </script>
+</body>
+</html>

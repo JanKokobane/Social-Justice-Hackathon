@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="investor-africa-favicon-white.png">
+    <link rel="stylesheet" href="/About-Us/ForAllPagesStyles.css"> 
+    <style>
+        .contact-section {
+            background-color: #fff;
+            padding: 60px 20px;
+            border-radius: 15px;
+            max-width: 800px;
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .contact-section p {
+            font-size: 1.2em;
+            color: #777;
+            margin-bottom: 30px;
+        }
+
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 40px;
+        }
+
+        .contact-info ul li {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #555;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-info ul li i {
+            color: #101110;
+            font-size: 1.5em;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+            color: #1f201f;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: #2d7a32;
+        }
+
+        .get-in-touch{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+       
+        form input, form textarea {
+            width: 100%;
+            padding: 15px;
+            font-size: 1.1em;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            transition: border-color 0.3s ease;
+        }
+
+        form input:focus, form textarea:focus {
+            outline: none;
+            border-color: #4CAF50;
+        }
+
+        form textarea {
+            height: 150px;
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/Media/logo-no-background.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+    
+                <li class="dropdown">
+                    <a href="#" class="dropdownbtn">About Us</a>
+                    <div class="dropdown-content">
+                        <a href="http://127.0.0.1:5500/About-Us/whoweare.html">Who we are</a>
+                        <a href="http://127.0.0.1:5500/About-Us/Missionstatement.html">Mission Statement</a>
+                        <a href="About-Us/VissionStatement.html">Vision Statement</a>
+                        <a href="ContactUs.html">Meet our Team</a>
+                        <a href="About-Us/Founder.html">Founder/CEO</a>
+                        <a href="/ContactUs.html">Get in Touch</a>
+                    </div>
+                </li> 
+    
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="contact-section">
+            <h2>Get in Touch</h2>
+            <p>Have a question, suggestion, or interested in partnering with Investor Africa?</p>
+            <div class="contact-info">
+                <ul>
+                    <li>
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <a href="mailto:info@investorafrica.com">info@investorafrica.com</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        +277 8638 8679
+                    </li>
+                    <li>
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        Limpopo, South Africa
+                    </li>
+                </ul>
+            </div>
+            <form class="get-in-touch">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for latest news and updates.</p>
+                <form>
+                    <input type="email" placeholder="Email Address">
+                    <button>Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <ul>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </ul>
+            </div>
+            
+            <div class="footer-copyright">
+                &copy; 2024 Investor Africa. All rights reserved.
+            </div>
+        </div>
+    </footer>  
+</body>
+</html>

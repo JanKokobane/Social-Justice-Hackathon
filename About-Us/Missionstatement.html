@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission Statement</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="investor-africa-favicon-white.png">
+    <link rel="stylesheet" href="ForAllPagesStyles.css">  
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo-no-background.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+    
+                <li class="dropdown">
+                    <a href="#" class="dropdownbtn">About Us</a>
+                    <div class="dropdown-content">
+                        <a href="http://127.0.0.1:5500/About-Us/whoweare.html">Who we are</a>
+                        <a href="http://127.0.0.1:5500/About-Us/Missionstatement.html">Mission Statement</a>
+                        <a href="http://127.0.0.1:5500/About-Us/VissionStatement.html">Vision Statement</a>
+                        <a href="http://127.0.0.1:5500/About-Us/MeetOurTeam.html">Meet our team</a> 
+                        <a href="http://127.0.0.1:5500/About-Us/MeetOurTeam.html">Founder/CEO</a>
+                        <a href="http://127.0.0.1:5500/ContactUs.html">GET IN TOUCH</a>
+                    </div>
+                </li> 
+    
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    <div class="slider-container">
+        <div class="slide active">
+            <img src="/About-Us/StockCake-Focused freelance worker_1728249269.jpg" alt="Investor Africa">
+        </div>
+        <div class="slide">
+            <img src="/About-Us/StockCake-Office innovation workshop_1728249352.jpg" alt="Investor Africa">
+        </div>
+        <div class="slider-controls">
+            <button class="prev">&lt;</button>
+            <button class="next">&gt;</button>
+        </div>
+        <div class="slide">
+            <img src="/About-Us/StockCake-Engaged Team Meeting_1728249567.jpg" alt="Investor Africa">
+        </div>
+        <div class="slide">
+            <img src="/About-Us/StockCake-Cluttered Workspace Chaos_1728249418.jpg" alt="Investor Africa">
+        </div>
+        <div class="slide">
+            <img src="/About-Us/StockCake-Architect Building Future_1728249629.jpg" alt="Investor Africa">
+        </div>
+    </div>
+    <div class="mission-statement">
+        <h2>Our Mission</h2>
+        <p>At Investor Africa, our mission is to empower African entrepreneurs with access to funding, resources, and networks, fostering innovative solutions for the continent's most pressing challenges and driving sustainable economic growth. We strive to create a vibrant ecosystem that supports entrepreneurship, innovation, and job creation, ultimately contributing to Africa's prosperity.</p>
+        <p>Our goal is to bridge the funding gap, provide mentorship opportunities, and facilitate collaboration between entrepreneurs, investors, and industry experts. By doing so, we aim to unlock Africa's potential, promote economic development, and improve the lives of millions.</p>
+    </div>
+   
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for latest news and updates.</p>
+                <form>
+                    <input type="email" placeholder="Email Address">
+                    <button>Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <ul>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </ul>
+            </div>
+            
+            <div class="footer-copyright">
+                &copy; 2024 Investor Africa. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.display = 'none'; 
+            });
+            slides[index].style.display = 'block'; 
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        nextBtn.addEventListener('click', nextSlide);
+        prevBtn.addEventListener('click', prevSlide);
+
+        setInterval(nextSlide, 5000); 
+
+        showSlide(currentSlide);
+
+    </script>    
+</body>
+</html>

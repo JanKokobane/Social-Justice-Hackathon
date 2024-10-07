@@ -1,0 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; 
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+.who-we-are h2 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    color: #1d1e1fc0;
+    font-weight: 100;
+}
+
+.logo img {
+    width: 250px;
+    padding: 0 10px;
+    height: 5vh;
+}
+
+header {
+    background:  #111111;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    top: 0;
+    z-index: 100; 
+}
+
+
+nav {
+    margin-left: 20px; 
+    flex-grow: 0; 
+    display: flex;
+    margin-bottom: -30px;
+    margin-top: -20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex; 
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+    margin-top: -19px;
+    margin-bottom: -33px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 100;
+    padding: 10px;
+    font-size: 14px;
+}
+
+nav ul li a:hover  {
+    color: #ff3c00;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdownbtn {
+    display: inline-flex;
+    padding: 14px 15px;
+    text-decoration: none;
+    color: white;
+    margin-top: -19px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #111111;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0pc rgba(0,0,0,0.2);
+    z-index: 1;
+    flex-direction: column;
+    left: 0;
+    top: 100%;
+}
+
+.dropdown-content a {
+    color: rgb(250, 241, 241);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+section {
+    background: white;
+}
+.who-we-are {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #f3f0f0;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 40px auto;
+    font-size: 15px;
+}
+
+.who-we-are img {
+    width: 100%;
+    max-width: 800px;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 50px;
+}
+
+.who-we-are blockquote {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 30px;
+    font-size: 1em;
+    text-align: center;
+    max-width: 800px;
+}
+
+.cta-button {
+    background: #ff3c00;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;  
+    border-radius: 155px;
+   margin-bottom: 25px;
+}
+.cta-button:hover {
+    background: #5cb85c;
+    color: #fff;
+}
+
+.who-we-are ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.who-we-are li {
+    margin-bottom: 2px;
+    font-size: 1em;
+    color: #333;
+}
+
+.who-we-are li::before {
+    content: "•";
+    color: #121213;
+    margin-right: 10px;
+}
+
+.footer-container {
+    background-color: #222;
+    color: #ffffff;
+    padding: 20px; 
+    text-align: center;
+}
+
+.footer-top {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-links,
+.footer-newsletter,
+.footer-social {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;  
+    padding: 10px;  
+}
+
+.footer-links ul,
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li,
+.footer-social ul li {
+    margin-bottom: 5px;  
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #007bff;
+}
+
+.footer-newsletter form {
+    display: flex;
+    margin-top: 10px;
+}
+
+.footer-newsletter input {
+    flex: 1;
+    padding: 8px; 
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.footer-newsletter button {
+    padding: 8px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.footer-social ul {
+    display: inline-block;
+}
+
+.footer-social a {
+    font-size: 20px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #007bff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0; 
+    font-size: 14px;
+    color: #aaa;
+    border-top: 1px solid #444;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .who-we-are {
+        padding: 40px 15px;
+    }
+
+    .footer-links,
+    .footer-newsletter,
+    .footer-social {
+        display: block;
+        width: 100%; 
+        margin-bottom: 20px;
+    }
+
+    .slider-container {
+        height: 300px; 
+    }
+
+    .prev, .next {
+        font-size: 20px; 
+    }
+
+    .slider-dots span {
+        width: 8px;
+        height: 8px;
+    }
+}
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 500px; 
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    transition: opacity 1s ease-in-out; 
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    pointer-events: cover;
+    position: absolute; 
+    background-size: cover; 
+    background-position: center;
+}
+
+.slider-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 10;
+}
+
+.prev, .next {
+    font-size: 30px;
+    color: rgb(185, 180, 180);
+    background-color: rgba(0, 0, 0, 0.219); 
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5%; 
+    transition: background-color 0.3s ease;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+
+
+.mission-statement {
+    padding: 40px;
+    max-width: 800px; 
+    margin: 0 auto;
+}
+
+.mission-statement h2 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    color: #1d1e1fc0;
+    font-weight: 100;
+}
+.mission-statement p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.mission-statement p:last-of-type {
+    margin-bottom: 0; 
+}
+
+.vision-statement {
+    border-radius: 8px; 
+    padding: 20px; 
+    margin: 20px auto; 
+    max-width: 800px; 
+    text-align: center; 
+}
+
+.vision-statement h2 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    color: #1d1e1fc0;
+    font-weight: 100;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.vision-statement p {
+    font-size: 16px; 
+    color: #555; 
+    line-height: 1.6;
+    margin-bottom: 20px; 
+}
+
+.vision-statement button {
+    background-color: #007bff; 
+    color: white; 
+    border: none;
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.vision-statement button:hover {
+    background-color: #0056b3; 
+}
+
+
+.team-section {
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.advisory-board {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.advisory-member {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 250px;
+    position: relative;
+}
+
+.advisory-carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 200px; 
+}
+
+.advisory-carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00ff0d;
+}
+
+
+
+
+
+
